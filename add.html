@@ -25,16 +25,16 @@
 <form >
 
     <label>Course Name:</label>
-    <input type="text" placeholder="Enter course Name">
+    <input type="text" placeholder="Enter course Name" required>
 
     <label>Instructor:</label>
-    <input type="text" placeholder="Enter Instructor Name">
+    <input type="text" placeholder="Enter Instructor Name" pattern="[a-za-z\s]+" title="Letters only,>
 
     <label>Credit Hours:</label>
-    <input type="text" placeholder="Enter credit hours">
+    <input type="text" placeholder="Enter credit hours" required>
 
     <label>Notes</label>
-    <textarea placeholder="Any Additional Notes..."></textarea> 
+    <textarea minlength="10" placeholder="Any Additional Notes..."></textarea> 
 
     <button>Add Course</button>
 
