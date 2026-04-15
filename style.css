@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    margin: 0;
+    background: #f8fafc;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    background: linear-gradient(to right, #1e3a8a, #3b82f6);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+nav {
+    background: white;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    display: flex;
+}
+
+nav a {
+    margin: 25px;
+    text-decoration: none;
+    color: #1e3a8a;
+    font-weight: bold;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+nav a:hover {
+    color: #f59e0b;
+}
+
+table {
+    width: 100%;
+    margin: 1px auto;
+    border-collapse: collapse;
+    background: white;
+}
+
+th {
+    background: #3b82f6;
+    color: white;
+}
+
+th, td {
+    padding: 15px;
+    border: 1px solid #ccc;
+}
+
+form {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    border: 1px;
+}
+
+input, textarea {
+    margin: 5px;
+    padding: 8px;
+}
+
+button {
+    background: #3b82f6;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border: none;
+}
+
+button:hover {
+    background: #f59e0b;
+}
+
+footer {
+    background: #1e3a8a;
+    color: white;
+    text-align: center;
+    padding: 18px 0;
+    bottom: 0;
+    width: 100%;
+    margin-top: 105px;
+    font-size: 0.85rem;
+}
+
+/* ✅ المشكلة الأولى: إضافة { بعد @media */
+@media (max-width: 600px) {
+    table, form {
+        width: 100%;
+    }
+    .cards-container {
+        display: flex;
+        overflow-x: auto;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+    main {
+        width: 100%;
+    }
+    .card {
+        width: 90%;
+    }
+    nav a {
+        margin: 10px;
+        font-size: 13px;
+    }
+}
+
+.courses {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 10px 10px;
+    background-color: #f4f6f9;
+}
+
+.courses h2 {
+    width: 100%;
+    text-align: center;
+    color: #0c070c;
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+.courses p {
+    width: 100%;
+    text-align: center;
+    font-size: 1.4rem;
+    margin-bottom: 40px;
+    color: #555;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    width: 100%;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease;
+    border: 1px solid #eee;
+    max-width: 300px;
+}
+
+.cards-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 20px;
+    object-fit: contain;
+}
+
+.card h3 {
+    color: #0c070c;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.main {
+    overflow-y: auto;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.font {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+h3 {
+    color: #0066cc;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+hr {
+    border: 2px solid #0066cc;
+    width: 80%;
+    margin: 20px auto;
+}
+
+p {
+    text-align: center;
+    font-size: 1rem;
